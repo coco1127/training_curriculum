@@ -8,8 +8,14 @@ class CalendarsController < ApplicationController
 
   # 予定の保存
   def create
+<<<<<<< Updated upstream
     Plan.create(plan: params[:plan], plan: commit)
     redirect_to action: :create
+=======
+    Plan.create(plan: params[:plan])
+    redirect_to action: :index
+
+>>>>>>> Stashed changes
   end
 
   private
